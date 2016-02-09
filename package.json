@@ -1,0 +1,23 @@
+{
+  "name": "dojos",
+  "version": "1.0.0",
+  "description": "Site de présentation des dojos.",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxaWebCenter/dojos.git"
+  },
+  "author": "Pierre CLEMENT <pierre@clement.re> (http://www.pierre-clement.info)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxaWebCenter/dojos/issues"
+  },
+  "homepage": "https://github.com/AxaWebCenter/dojos#readme",
+  "devDependencies": {
+    "request-promise": "^2.0.0",
+    "string": "^3.3.1"
+  }
+}
