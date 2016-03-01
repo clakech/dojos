@@ -1,10 +1,25 @@
 doctype html
 html(lang="fr")
   head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
     title Dojos - AXA WebCenter
+    style
+      include:less style.less
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
   body
-    h1 Dojos proposés
-    #container.col
+    .title-container
+      h1
+        img(src="https://avatars.githubusercontent.com/u/8037803")
+        | Dojos proposés
+    .content-container
       ul
         each repo in repos
-          li= repo.nomPropre
+          li
+            span.titre= repo.nomPropre
+            span.tags
+              each tag in repo.meta.tags
+                span.tag= tag
+            span.description= repo.description
+            a(href="#{repo.url}", title="Voir le DOJO sur Github")
+              i.fa.fa-github

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/AxaWebCenter/dojos#readme",
   "devDependencies": {
     "jade": "^1.11.0",
+    "jstransformer-less": "^2.1.0",
     "request-promise": "^2.0.0",
     "rimraf": "^2.5.2",
     "string": "^3.3.1"

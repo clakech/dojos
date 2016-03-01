@@ -43,6 +43,7 @@ rp(new GithubApiConfigRequete('https://api.github.com/users/' + config.nomOrgani
     let repos = reposUtilises.filter((repo) => {
       return !!repo;
     });
+
     var rimraf = require('rimraf');
     var fs = require('fs');
     var jade = require('jade');
