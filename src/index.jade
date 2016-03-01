@@ -11,7 +11,7 @@ html(lang="fr")
     .title-container
       h1
         img(src="https://avatars.githubusercontent.com/u/8037803")
-        | Dojos proposés
+        | Dojos
     .content-container
       ul
         each repo in repos
@@ -23,3 +23,5 @@ html(lang="fr")
             span.description= repo.description
             a(href="#{repo.url}", title="Voir le DOJO sur Github")
               i.fa.fa-github
+      footer
+        a(href="http://axawebcenter.fr", title="Site du WebCenter d'AXA") Proposés par le WebCenter AXA
