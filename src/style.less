@@ -79,6 +79,10 @@ body {
           color: #37474F;
         }
 
+        .description, .tags {
+          width: calc(~"100% - 3em");
+        }
+
         a, a:hover, a:visited {
           position: absolute;
           right: 0;
@@ -108,6 +112,36 @@ body {
     a, a:hover, a:visited {
       color: #90A4AE;
       font-size: 0.9em;
+    }
+  }
+}
+
+@media all and (max-device-width: 320px) {
+  body {
+    .content-container ul li {
+      .titre, .tags {
+        display: block;
+      }
+      .tags, .tag:first-child {
+        margin-left: 0;
+      }
+      .tags {
+        font-size: 0.8em;
+      }
+      .description {
+        width: 100%;
+      }
+
+      a, a:hover {
+        top: 0.4em;
+        bottom: inherit;
+
+        &:hover {
+          font-size: 3em;
+          right: 0;
+          bottom: inherit;
+        }
+      }
     }
   }
 }
