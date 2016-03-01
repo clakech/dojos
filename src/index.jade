@@ -1,0 +1,10 @@
+doctype html
+html(lang="fr")
+  head
+    title Dojos - AXA WebCenter
+  body
+    h1 Dojos proposés
+    #container.col
+      ul
+        each repo in repos
+          li= repo.nomPropre

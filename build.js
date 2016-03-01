@@ -9,7 +9,7 @@ class GithubApiConfigRequete {
   constructor(uri) {
     this.uri = uri;
     this.json = true;
-    this.qs = { access_token: '' },
+    this.qs = { access_token: '3d26a8f192347c4428b79338e5cf07cf0357d945' },
     this.headers = { 'User-Agent': 'Travis build' }
   }
 }
@@ -43,6 +43,16 @@ rp(new GithubApiConfigRequete('https://api.github.com/users/' + config.nomOrgani
     let repos = reposUtilises.filter((repo) => {
       return !!repo;
     });
-    console.log(repos);
+    var rimraf = require('rimraf');
+    var fs = require('fs');
+    var jade = require('jade');
+
+    var buildDir = "build/";
+
+    rimraf(buildDir, () => {
+      fs.mkdirSync(buildDir);
+      var index = jade.compileFile('src/index.jade')({repos: repos});
+      fs.writeFileSync(buildDir + 'index.html', index, 'utf8');
+    });
   });
 });
