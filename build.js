@@ -9,7 +9,7 @@ class GithubApiConfigRequete {
   constructor(uri) {
     this.uri = uri;
     this.json = true;
-    this.qs = { access_token: '3d26a8f192347c4428b79338e5cf07cf0357d945' },
+    this.qs = { access_token: process.env.GH_TOKEN },
     this.headers = { 'User-Agent': 'Travis build' }
   }
 }
