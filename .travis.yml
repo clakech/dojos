@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "5"
+branches:
+  only:
+    - master
+script: node build.js
+after_success:
+  - bash ./deploy.sh
+env:
+  global:
+    - GH_REF: github.com/AxaWebCenter/dojos.git
+    - secure: "bSTW5OUqviT35Z4HxS9kEkxccpgUw0EuJLcYvwdyZ0eTnd+awGaz76Fg+BElRVZKsIfrJ/QqaIJt8dEplqluZwjaohw2MzgmaOf0mCYGBY6wF9d6pGj0MgUOw8ltNc8Xo8QxBf83X0O0SyUQfidRVvmUz+5cvy7p90DDmAeIETi8MlDiCqrsTdTvdEU7rc6zC3xt1BUFL4fSELQKCrfWvGd2yumT2WXlxYQCj8ERaU2MAj4JzZ65BAR86BXvuFxnjiK6glkW+nNI3BnOMXlMhTqSlJTv0phC7ibKKxUTOCoVF0z2KoZ3/9JshJQlXzhK0fk1+W2r6H1FkwMZdPEhOEQwJ0CGQf3Im+Oed2CTxpzScWiDedoHMNUGi0dN5LPeIVwGhjCevPQyzAoORscJ5/cAuZCt5FQCA2qX2PSleXXbdOlhxf4lJif8MAnZ3prUIPCSeJROxHC35O1nWPVKrrlBs7fI9pQQEvq83ULRu1TSdEM3ZzuUrDPf3nAUcYPhed0TwpypNktzsc2PLhO2OVsl6VpoDKB1mQErb2zMGTiAm3zkElWY42W4mO/lJI0+2SJGH7sCwh1nO93ykT5HoXZcTWTvxhg7kl+O3TZkJJIvxw4cdKNHo2xFAPwMRWiR3qnV6ZOCR6xqJA+9eME9HFLjAtdG7Ox5o2nTAycS3Ho="
