@@ -3,6 +3,7 @@ html(lang="fr")
   head
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+    meta(name="description", content="Liste des dojos (TDD, BDD, refactoring legacy, concours de dev, ...) diffusés et animés par le WebCenter AXA.")
     title Dojos - AXA WebCenter
     style
       include:less style.less
@@ -21,7 +22,7 @@ html(lang="fr")
               each tag in repo.meta.tags
                 span.tag= tag 
             span.description= repo.description
-            a(href="#{repo.url}", title="Voir le DOJO sur Github", target="_blank")
+            a(href="#{repo.url}", title="Voir le dojo sur Github", target="_blank")
               i.fa.fa-github
             if repo.meta.languages
               span.languages
