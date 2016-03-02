@@ -19,9 +19,14 @@ html(lang="fr")
             span.titre= repo.nomPropre
             span.tags
               each tag in repo.meta.tags
-                span.tag= tag
+                span.tag= tag 
             span.description= repo.description
-            a(href="#{repo.url}", title="Voir le DOJO sur Github")
+            a(href="#{repo.url}", title="Voir le DOJO sur Github", target="_blank")
               i.fa.fa-github
+            if repo.meta.languages
+              span.languages
+                | Langages :  
+                each lang in repo.meta.languages
+                  span.tag= lang
       footer
         a(href="http://axawebcenter.fr", title="Site du WebCenter d'AXA") Proposés par le WebCenter AXA
