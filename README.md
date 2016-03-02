@@ -1,5 +1,7 @@
-# dojos
+﻿# dojos
 Site de présentation des dojos.
+
+[http://axawebcenter.github.io/dojos/](http://axawebcenter.github.io/dojos/)
 
 ## Note
 
