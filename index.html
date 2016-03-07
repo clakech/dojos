@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"><meta name="description" content="Liste des dojos (TDD, BDD, refactoring legacy, concours de dev, ...) diffusés et animés par le WebCenter AXA."><title>Dojos - AXA WebCenter</title><style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 200;
+  background-color: #FAFAFA;
+  color: #263238;
+}
+body .title-container {
+  background-color: #1565C0;
+  padding: 1em;
+  box-shadow: 0 0 2px 2px #B0BEC5;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 5;
+}
+body .title-container h1 {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 1200px;
+  color: #FFFFFF;
+  font-weight: 100;
+  line-height: 2em;
+}
+body .title-container h1 img {
+  height: 2em;
+  float: left;
+  margin-right: 0.4em;
+}
+body .content-container {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 1em auto;
+  margin-top: 6em;
+  padding: 1em;
+}
+body .content-container ul {
+  list-style: none;
+}
+body .content-container ul li {
+  border-top: 1px solid #90A4AE;
+  padding: 1em 0.3em;
+  position: relative;
+}
+body .content-container ul li:first-child {
+  border-top: none;
+}
+body .content-container ul li .titre {
+  font-size: 1.3em;
+  font-weight: 400;
+  display: inline-block;
+  width: 10em;
+}
+body .content-container ul li .tags {
+  margin-left: 2em;
+}
+body .content-container ul li .tags .tag {
+  display: inline-block;
+  background-color: #F5F5F5;
+  color: #78909C;
+  font-size: 0.8em;
+  padding: 0.3em 1em;
+  border-radius: 0.6em;
+  margin: 0 0.3em;
+  border: 1px solid #90A4AE;
+}
+body .content-container ul li .description {
+  display: block;
+  font-style: italic;
+  margin-top: 0.9em;
+  font-size: 0.9em;
+  color: #37474F;
+}
+body .content-container ul li .description,
+body .content-container ul li .tags {
+  width: calc(100% - 3em);
+}
+body .content-container ul li .languages {
+  margin-top: 0.5em;
+  display: block;
+  color: #90A4AE;
+  font-style: italic;
+  font-size: 0.8em;
+}
+body .content-container ul li .languages .tag {
+  font-size: 1rem;
+  font-family: monospace;
+}
+body .content-container ul li .languages .tag:after {
+  content: ' - ';
+}
+body .content-container ul li .languages .tag:last-child:after {
+  content: none;
+}
+body .content-container ul li a,
+body .content-container ul li a:hover,
+body .content-container ul li a:visited {
+  position: absolute;
+  right: 0;
+  font-size: 3em;
+  bottom: 0.2em;
+  color: #512DA8;
+  transition: all 200ms ease-in-out;
+}
+body .content-container ul li a:hover,
+body .content-container ul li a:hover:hover,
+body .content-container ul li a:visited:hover {
+  font-size: 3.4em;
+  right: -0.05em;
+  bottom: 0.1em;
+  color: #E53935;
+}
+body footer {
+  text-align: center;
+  border-top: 1px solid #ECEFF1;
+  padding: 1em;
+  width: 80%;
+  margin: 2em auto;
+}
+body footer a,
+body footer a:visited {
+  color: #512DA8;
+  font-size: 0.9em;
+}
+body footer a:hover,
+body footer a:visited:hover {
+  color: #E53935;
+}
+@media all and (max-width: 400px) {
+  body .content-container ul li .titre,
+  body .content-container ul li .tags {
+    display: block;
+  }
+  body .content-container ul li .tags,
+  body .content-container ul li .tag:first-child {
+    margin-left: 0;
+  }
+  body .content-container ul li .description {
+    width: 100%;
+  }
+  body .content-container ul li a,
+  body .content-container ul li a:hover {
+    top: 0.4em;
+    bottom: inherit;
+  }
+  body .content-container ul li a:hover,
+  body .content-container ul li a:hover:hover {
+    font-size: 3em;
+    right: 0;
+    bottom: inherit;
+  }
+}
+</style><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></head><body><div class="title-container"><h1><img src="https://avatars.githubusercontent.com/u/8037803">Dojos</h1></div><div class="content-container"><ul><li><span class="titre">Android intro</span><span class="tags"></span><span class="description">Introduction au développement Android via une application simple de gestion de tâches.</span><a href="https://github.com/AxaWebCenter/dojo-androidIntro" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a><span class="languages">Langages :  <span class="tag">Android</span></span></li><li><span class="titre">Calculateur de chaine</span><span class="tags"><span class="tag">TDD</span></span><span class="description">Introduction au TDD.</span><a href="https://github.com/AxaWebCenter/dojo-calculateurDeChaine" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a></li><li><span class="titre">Game of life</span><span class="tags"><span class="tag">tdd</span><span class="tag">jeu</span></span><span class="description">Développer une itération du jeu de la vie.</span><a href="https://github.com/AxaWebCenter/dojo-gameOfLife" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a></li><li><span class="titre">Gilded rose</span><span class="tags"><span class="tag">refactoring</span><span class="tag">legacy</span></span><span class="description">Entrainement au travail sur code legacy.</span><a href="https://github.com/AxaWebCenter/dojo-gildedRose" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a><span class="languages">Langages :  <span class="tag">C#</span><span class="tag">Objective-C</span><span class="tag">Java</span><span class="tag">Javascript</span></span></li><li><span class="titre">Introduction typescript</span><span class="tags"><span class="tag">tdd</span><span class="tag">jeu</span><span class="tag">introduction</span></span><span class="description">Introduction à Typescript autour d'un Puissance 4.</span><a href="https://github.com/AxaWebCenter/dojo-introductionTypescript" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a></li><li><span class="titre">Minesweeper</span><span class="tags"><span class="tag">tdd</span><span class="tag">jeu</span></span><span class="description">Dévoiler la solution d'un démineur.</span><a href="https://github.com/AxaWebCenter/dojo-minesweeper" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a></li><li><span class="titre">Reversi</span><span class="tags"><span class="tag">tdd</span><span class="tag">jeu</span></span><span class="description">Le but de ce dojo est de développer le déroulement d'une partie de Reversi.</span><a href="https://github.com/AxaWebCenter/dojo-reversi" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a></li><li><span class="titre">Roman numerals</span><span class="tags"><span class="tag">TDD</span></span><span class="description">Conversion de chiffre romain.</span><a href="https://github.com/AxaWebCenter/dojo-romanNumerals" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a></li><li><span class="titre">Trip service</span><span class="tags"><span class="tag">refactoring</span><span class="tag">legacy</span></span><span class="description">Dojo orienté tests de caractérisation et refactoring</span><a href="https://github.com/AxaWebCenter/dojo-tripService" title="Voir le dojo sur Github" target="_blank"><i class="fa fa-github"></i></a><span class="languages">Langages :  <span class="tag">C#</span><span class="tag">Java</span><span class="tag">Javascript</span><span class="tag">PHP</span></span></li></ul><footer><a href="http://axawebcenter.fr" title="Site du WebCenter d'AXA">Proposés par le WebCenter AXA</a></footer></div></body></html>
